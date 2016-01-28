@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Load stylesheets -->
+	<link href='/css/bootstrap.min.css' rel="stylesheet" type="text/css">
+	<link href='/css/custom.css' rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="datalist" class="container">
+<div class="row">
+</div>
+</div>
+
+<!-- Load jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Panel Generator  -->
+<script>
+$(document).ready(function() {
+	
+	// Retrieve articles.json from server
+	$.getJSON("articles.json", function(result){
+		
+		// Loop over all the objects in the JSON file
+		$.each(result, function(i, field){
+			
+			// Add wrapper div to .row div
+			jQuery('<div/>', {
+				id: 'wrapper'+i,
+				class: 'wrapper col-lg-3 col-md-4 col-sm-6 col-xs-12',
+			}).appendTo('.row')
+			
+			// Add panel to div for panel
+			jQuery('<div/>', {
+				id: 'card'+i,
+				class: 'card panel panel-default',
+				height: field.thumbnail.height,
+				width: field.thumbnail.width,
+			}).appendTo('#wrapper'+i)
+		
+			// Add background image to panel
+			jQuery('<img/>', {
+				id: 'article'+i,
+				class: 'backImg',
+				src: field.thumbnail.url,
+			}).appendTo('#card'+i)
+			
+			// If the object is a video, add YouTube logo to panel
+			if(field.type === "video"){
+				jQuery('<img/>', {
+					src: '/img/youtubeIcon.png',
+					class: 'youtubeIcon'
+				}).appendTo('#card'+i)
+				
+				// Add play button to panel
+				jQuery('<button/>', {
+					id: 'playBtn'+i,
+					class: 'playBtn'
+				}).appendTo('#card'+i)
+				
+				// Add icon image to play button
+				jQuery('<img/>', {
+					src: '/img/playIcon.png'
+				}).appendTo('#playBtn'+i)
+			}
+			
+			// Add div with .panel-heading bootstrap class to panel 
+			jQuery('<div/>', {
+				class: 'panel-heading '+field.type,
+				id: 'panelHeading'+i,
+				title: field.title	
+			}).appendTo('#card'+i)
+			
+			// Add title to .panel-heading div
+			jQuery('<p/>', {
+				text: field.title
+			}).appendTo('#panelHeading'+i)
+			
+			// Calculate years, months, days, hours & minutes since last update
+			var updated = '',
+				now = Date.now(),
+				secondsSince = ((now - field.updated)/1000),
+				years = Math.floor(secondsSince / 31536000),
+				days = Math.floor((secondsSince % 31536000) / 86400),
+				months = days/30,
+				hours = Math.floor(((secondsSince % 31536000) % 86400) / 3600),
+				minutes = Math.floor((((secondsSince % 31536000) % 86400) % 3600) /60)
+			
+			// Determine value of 'updated' string
+			if (years > 1){
+				updated = years + ' years ago'
+			} else if (years > 0) {
+				updated = years + ' year ago'
+			} else if (months > 1){
+				updated = months + ' months ago'
+			} else if (months > 0){
+				updated = months + ' month ago'
+			} else if (day > 1){
+				updated = days + ' days ago'
+			} else if (day > 0){
+				updated = days + ' day ago'
+			} else if (hours > 1) {
+				updated = hours + ' hours ago'
+			} else if (hours > 0) {
+				updated = hours + ' hour ago'
+			}	else if (minutes > 1) {
+				updated = minutes + ' minutes ago'
+			} else {
+				updated = 'A minute ago'
+			}
+			
+			// Add 'updated' string to .panelHeading div in a p tag
+			jQuery('<p/>', {
+				text: updated,
+				class: 'updated'
+			}).appendTo('#panelHeading'+i)
+		})
+	})
+})
+</script>
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+.container{
+	margin-top: 305px;
+	text-align: center;
+}
+.wrapper{
+	margin-bottom: 11px;
+	padding-left: 20px;
+}
+.card{
+	border-radius: 8px;
+	text-align: center;
+	position: relative;
+	width:100%;
+	max-width:260px;
+}
+.backImg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.youtubeIcon {
+	height: 25px;
+	width: 50px;
+	display: inline;
+	position: absolute;
+	top: 1px;
+	left: 2px;
+}
+.playBtn {
+	position: relative;
+	margin-top: 34px;
+	display: inline-block;
+	float: none;
+	background-color: transparent;
+	border: none;
+	vertical-align: middle;
+}
+.playBtn img{
+	width: 50px;
+	opacity: 0.85;
+}
+.panel-default{
+	border-radius: 1px;
+	margin: 0;
+	text-align: center;
+}
+.panel-default>.panel-heading{
+	background-color: #808080;
+	border-radius: 1px;
+	border: none;
+}
+.panel-heading {
+	text-align: left;
+	position: absolute;
+	bottom: 1px;
+	left: 1%;
+	right: 0.5%;
+	opacity: 0.75;
+	padding: 1px 7px 2px 6px;
+	margin: 0;
+	padding 0;
+}
+.panel-heading p{
+	color: white;
+	font-size: 10px;
+	paddig: 0;
+	margin 0;
+}
+.panel-heading p:first-child{
+	display: inline;
+	padding-right: 7px;
+}
+.panel-heading p:last-child{
+	font-size: 8px;	
+	padding-top: 2px;
+	float: right;
+}
+.updated{
+	margin-bottom: 0;
+	right: 0;
+}

@@ -1,0 +1,79 @@
+[
+  {
+      "type": "article",
+      "updated": 1403541819553,
+      "title": "Incoming Changes to In-Game Experience",
+      "summary": "With our next Heroes Technical Alpha patch, we'll be removing in-game trickle experience bonuses for teams that are behind in levels during a match in order to test out what we're calling the \"Underdog Bonus.\" ",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/49KWAE5J4N9R1403541752451.jpg",
+          "width": 260,
+          "height": 130
+      }
+  },
+  {
+      "type": "video",
+      "updated": 1403200701847,
+      "title": "Next Phase of the Technical Alpha Beginning Soon",
+      "summary": "In the coming weeks, the next phase of the Heroes of the Storm Technical Alpha will begin, and we wanted to let everyone know what changes lay ahead of us in the Nexus.",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/connect_thumbnail/DA550UXZC42O1403045050532.jpg",
+          "width": 260,
+          "height": 130
+      }
+  },
+  {
+      "type": "article",
+      "updated": 1402090273173,
+      "title": "The Art of Brad Whitlam",
+      "summary": "This Community Showcase spotlights three pieces of Heroes of the Storm fan art by artist Brad Whitlam!",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/connect_thumbnail/IJXWMN0GDRX01402079800035.jpg",
+          "width": 260,
+          "height": 130
+      }
+  },
+  {
+      "type": "article",
+      "updated": 1403311822937,
+      "title": "Building the Nexus:  The Voice of Gazlowe",
+      "summary": "A lot goes into getting each unique Hero ready to brawl against other Heroes, and in this episode of Building the Nexus, we check in with the voice of Gazlowe!",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/connect_thumbnail/EVT2GTBA7Y611402073015297.jpg",
+          "width": 260,
+          "height": 130
+      }
+  },
+  {
+      "type": "video",
+      "updated": 1401987836696,
+      "title": "Designer Insights: Knockin' out Muradin's Design",
+      "summary": "Game Designer Matthew Cooper and Senior Game Designer Richard Khoo joined forces to lay down the law on Muradin's design and mechanics.",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/connect_thumbnail/ERGNZJEM36UB1400266597849.jpg",
+          "width": 260,
+          "height": 130
+      }
+  },
+  {
+      "type": "article",
+      "updated": 1401918542756,
+      "title": "Muradin Hero Week",
+      "summary": "Once a mentor to Prince Arthas, Muradin was unable to prevent him from becoming the Lich King. In Heroes of the Storm, Muradin takes on the role of a durable Warrior who excels at diving into the heat of battle and disrupting enemies, while protecting teammates. This fearsome dwarf is just the Bronzebeard you’ll want by your side as you brawl in the Nexus, and you can learn all about him in our newest Hero Blog! ",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/connect_thumbnail/7DJNFFBOHDUW1401734478305.jpg",
+          "width": 260,
+          "height": 130
+      }
+  },
+  {
+      "type": "article",
+      "updated": 1401734149593,
+      "title": "Blizzard Entertainment Returns to San Diego Comic Con",
+      "summary": "Blizzard is proud to announce that we’ll be returning to this year’s San Diego Comic Con.",
+      "thumbnail": {
+          "url": "//bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/FW1HBLIUSMJQ1401733980165.jpg",
+          "width": 260,
+          "height": 130
+      }
+  }
+]
